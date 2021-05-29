@@ -1,0 +1,34 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+.navbar img{
+  padding: 2px 0 0 2px;
+  height: 60px;
+  width:60px;
+
+}
+.Nav-container{
+    background-color: red;
+}
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: rgb(42, 39, 187); /* Dark background color */
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: right; /* Make sure that the links stay side-by-side */
+    display: flex; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+  }
+    
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
