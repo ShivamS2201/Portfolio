@@ -26,8 +26,27 @@ function Home(){
          </div>
          <hr />
          <SkillMeter>
-           Meter OP
+         <h1>My Skills</h1>
 
+        <p>HTML</p>
+          <div class="container">
+            <div class="skills html">90%</div>
+          </div>
+
+          <p>CSS</p>
+          <div class="container">
+            <div class="skills css">80%</div>
+          </div>
+
+          <p>JavaScript</p>
+          <div class="container">
+            <div class="skills js">65%</div>
+          </div>
+
+          <p>PHP</p>
+          <div class="container">
+            <div class="skills php">60%</div>
+          </div>
          </SkillMeter>
         </Conatiner>
     )
@@ -103,9 +122,39 @@ padding:0 calc(3.5vw + 5px);
 `
 
 const SkillMeter = styled.div`
+width:53vw;
+padding-left:20%;
+margin-bottom:20px;
+
 margin-top: 12px; 
-background-color:red;
 min-height:30vh;
+.container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius:20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align:center;
+}
+
+.html {width: 90%; background-color: #04AA6D;
+ border-radius:20px ;
+   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
+    rgba(0 0 0 /73%) 0 16px 10px -10px;}
+.css {width: 80%; background-color: #2196F3; border-radius:20px ;
+   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
+    rgba(0 0 0 /73%) 0 16px 10px -10px;}
+.js {width: 65%; background-color: #f44336; border-radius:20px ;
+   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
+    rgba(0 0 0 /73%) 0 16px 10px -10px;}
+.php {width: 60%; background-color: #808080; border-radius:20px ;
+   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
+    rgba(0 0 0 /73%) 0 16px 10px -10px;}
 @media screen and (max-width: 700px){
   margin-top:35px;
 }
