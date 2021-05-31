@@ -9,18 +9,18 @@ function Navbar(){
       </Logo>  
 
          <NavMenu>
-                <a>
+                <button onclick="document.getElementById('side2').scrollIntoView()">
                     <span>ABOUT</span>
-                </a>
-                <a> 
+                </button>
+                <button> 
                     <span>EXPERIENCE</span>
-                </a>
-                <a> 
+                </button>
+                <button> 
                     <span>PROJECTS</span>
-                </a>
-                <a>  
+                </button>
+                <button>  
                     <span>EXTRACURRICULAR</span>
-                </a>
+                </button>
             </NavMenu>         
   
 </NavContainer>
@@ -45,7 +45,7 @@ letter-spacing: 2.6px;
 z-index: 3
 
 ` 
-const Logo = styled.a`
+const Logo = styled.div`
 padding: 0;
 width: 80px;
 margin-top: -10px;
@@ -70,14 +70,20 @@ align-items: center;
   margin-right: auto;
   margin-left: 25px;
   cursor:pointer;
-  a {
+ 
+  button {
     display: flex;
+    background-color: #f9f9f9;
     align-items: center;
-    padding: 0 12px;
+    padding: 6px 21px;
+    border:0px;
+    transition: all 250ms ease-out;
+    cursor:pointer;
+
   }
-  
-  a:hover{
+  button:hover{
     background-color:rgba(0,0,0,0.8);
     color:#f9f9f9;
 }
+  
 `
