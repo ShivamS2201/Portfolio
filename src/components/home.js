@@ -28,7 +28,7 @@ function Home(){
         <center> <h1>My Skills</h1></center>
 
          <SkillMeter>
-         <div class="side2">    
+         <div class="side2" >    
          <h3>LANGUAGES</h3>
          <div class="skills lang">Python</div>     
          <div class="skills lang">JavaScript</div>     
@@ -159,6 +159,7 @@ min-height:30vh;
   padding: 20px;
 
   .item1{
+    color: midnightblue;
     grid-column: 1 / span 3;
     grid-row: 1;
   }
@@ -172,7 +173,7 @@ min-height:30vh;
     grid-column: 2;
   grid-row: 3 / span 1;
   img{
-    height:69px;
+    height:100px;
     width:auto;
   }
 
@@ -225,7 +226,7 @@ min-height:30vh;
 .lang {margin-left:2px;padding:1px 5px 3px 5px; background-color: #f44336; border-radius:20px ;
    box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;}
-.libs { padding:1px 5px 3px 5px;background-color: #808080; border-radius:20px ;
+.libs { padding:1px 5px 3px 5px;background-color: #dc7a47; border-radius:20px ;
    box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;}
 
