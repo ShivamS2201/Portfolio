@@ -1,16 +1,23 @@
 import React from 'react';
 import styled from 'styled-components'
- 
+import {BrowserRouter as Router,
+   Link } from "react-router-dom";
+import ScrollHandler from './scrollhandler'
+   
 function Navbar(){
     return(
         <NavContainer>
+          <Router>
+          <ScrollHandler />
          <Logo>
         <img src="/images/trans-logo.png" alt="name" />
       </Logo>  
 
          <NavMenu>
-                <button onclick="document.getElementById('side2').scrollIntoView()">
+                <button>
+                  <Link to={'/#skill'}>
                     <span>ABOUT</span>
+                    </Link>
                 </button>
                 <button> 
                     <span>EXPERIENCE</span>
@@ -22,7 +29,7 @@ function Navbar(){
                     <span>EXTRACURRICULAR</span>
                 </button>
             </NavMenu>         
-  
+            </Router>
 </NavContainer>
         
     )
