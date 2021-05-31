@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Home(){
+
+  
     return(
         <Conatiner>
         <div class="row">
             <div class="side">
             <h1>SHIVAM SHARMA</h1>
+            
             <p>Hi ! I am a second year computer science undergraduate at <a class="bvcoe" href="https://www.bvcoend.ac.in/">BVCOE</a>, New Delhi, India.<br />
             I like to build Mobile and Web Apps, along with that I have Executive Experience while working at <b>BVPIEEE</b> and <b>TEDxBVCOE</b>
             </p>
@@ -27,8 +30,8 @@ function Home(){
          <hr />
         <center> <h1>My Skills</h1></center>
 
-         <SkillMeter>
-         <div class="side2" >    
+         <SkillMeter id="#skill" key="skill">
+         <div class="side2"  >    
          <h3>LANGUAGES</h3>
          <div class="skills lang">Python</div>     
          <div class="skills lang">JavaScript</div>     
