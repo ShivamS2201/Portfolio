@@ -25,29 +25,50 @@ function Home(){
          </div>
          </div>
          <hr />
+        <center> <h1>My Skills</h1></center>
+
          <SkillMeter>
-         <h1>My Skills</h1>
+         <div class="side2">    
+         <h3>LANGUAGES</h3>
+         <div class="skills lang">Python</div>     
+         <div class="skills lang">JavaScript</div>     
+         <div class="skills lang">C++</div>     
+         <div class="skills lang">Lua</div>
+         <div class="skills lang">HTML</div>     
+         <h3>FrameWorks</h3>
+        <div class="skills frameworks">Django</div>
+        <div class="skills frameworks">React</div>
+        <div class="skills frameworks">Flask</div>        
+        <div class="skills frameworks">Flutter</div>
+        <h3>Technologies</h3>
+            <div class="skills Tech">Machine Learning</div>
+            <div class="skills Tech">Computer Vision</div>
+            <div class="skills Tech" id="1css">Deep Learning</div>
+          <h3>Libraries</h3>   
+           <div class="skills libs">Pandas</div>
+           <div class="skills libs">Numpy</div>
+           <div class="skills libs">Matplotlib</div>
+           <div class="skills libs">Tensorflow</div>
+           <div class="skills libs">Keras</div>
+           <div class="skills libs CV">OpenCv</div>
+           </div>
+           
+        <div class="main2">
+            <h2 class="item1"><center>TOOLS</center></h2>
+            <div class="item2"><i class='fab fa-github-square'></i></div>
+            <div class="item3"> <i class="fab fa-git-alt"></i></div>
+            <div class="item4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" alt="vscode-icon"/></div>
+            <div class="item5"> <img src="https://pbs.twimg.com/profile_images/1201816065266929664/evgRr8NV_400x400.jpg" alt="vscode-icon"/></div>
+            <div class="item6"><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/c7a9e3c69a2af799d9ba8693819794718e194956/icons/file_type_vscode.svg" alt="vscode-icon"/></div>
 
-        <p>HTML</p>
-          <div class="container">
-            <div class="skills html">90%</div>
-          </div>
 
-          <p>CSS</p>
-          <div class="container">
-            <div class="skills css">80%</div>
-          </div>
+         </div>
 
-          <p>JavaScript</p>
-          <div class="container">
-            <div class="skills js">65%</div>
-          </div>
 
-          <p>PHP</p>
-          <div class="container">
-            <div class="skills php">60%</div>
-          </div>
+          
          </SkillMeter>
+
+         
         </Conatiner>
     )
 }
@@ -114,49 +135,137 @@ padding:0 calc(3.5vw + 5px);
       box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;
          }
-    SkillMeter{
-      background-color:red;
-    }
+    
     }  
 
 `
 
 const SkillMeter = styled.div`
-width:53vw;
-padding-left:20%;
-margin-bottom:20px;
+display:flex;
 
+margin-bottom:30px;
 margin-top: 12px; 
 min-height:30vh;
-.container {
-  width: 100%;
-  background-color: #ddd;
-  border-radius:20px;
+.side2 {
+  flex: 50%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.main2 {
+  display:grid;
+  justify-items:center;
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+
+  .item1{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  .item2{
+    grid-column: 3;
+  grid-row: 2 / span 1;
+  font-size: 64px;
+
+  }
+  .item4{
+    grid-column: 2;
+  grid-row: 3 / span 1;
+  img{
+    height:69px;
+    width:auto;
+  }
+
+
+  }
+  .item3{
+    grid-column: 1 / span 1;
+  grid-row: 4;
+  font-size: 64px;
+
+
+  }
+  .item5{
+    grid-column: 3/ span 1;
+  grid-row: 4;
+  font-size:14px;
+  img{
+    height:69px;
+    width:auto;
+  }
+}
+.item6{
+  font-size:14px;
+  height:40px;
+  width: 59px;
 }
 
+
+}
 .skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 5px;
   color: white;
   text-align:center;
+  margin:1px 2px 7px 3px;
+  display:inline;
 }
 
-.html {width: 90%; background-color: #04AA6D;
+.frameworks { padding:1px 5px 3px 5px;background-color: #04AA6D;
  border-radius:20px ;
    box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;}
-.css {width: 80%; background-color: #2196F3; border-radius:20px ;
+.Tech {padding:1px 5px 3px 5px; background-color: #2196F3; border-radius:20px ;
+   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
+    rgba(0 0 0 /73%) 0 16px 10px -10px;
+  margin-top:2px}
+#1css{
+    display: block;max-width: 112px;margin-top: 12px;
+  }
+.lang {margin-left:2px;padding:1px 5px 3px 5px; background-color: #f44336; border-radius:20px ;
    box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;}
-.js {width: 65%; background-color: #f44336; border-radius:20px ;
+.libs { padding:1px 5px 3px 5px;background-color: #808080; border-radius:20px ;
    box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;}
-.php {width: 60%; background-color: #808080; border-radius:20px ;
-   box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
-    rgba(0 0 0 /73%) 0 16px 10px -10px;}
-@media screen and (max-width: 700px){
-  margin-top:35px;
+
+
+
+    @media screen and (max-width: 700px){
+      margin-top:35px;
+      flex-direction:column;
+      .Tech {
+        display: inline-grid;
+    margin-top: 7px;
+      }
+      .libs {
+        
+          display: inline-grid;
+    margin-top: 13px;
+        
+      }
+
+      .main2{
+        .item3{
+          font-size:50px;
+        }
+        .item2{
+          font-size:50px;
+        }
+        .item4{background:inherit;
+          img{
+            height:90px;
+        width:auto;
+          }
+      }
+      .item5{
+        img{
+          height:60px;
+           width:auto;
+        }
+    }
+
+    }
 }
 `
 
