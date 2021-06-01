@@ -6,7 +6,7 @@ import ScrollHandler from './scrollhandler'
    
 function Navbar(){
     return(
-        <NavContainer>
+        <NavContainer id="#about">
           <Router>
           <ScrollHandler />
          <Logo>
@@ -15,18 +15,22 @@ function Navbar(){
 
          <NavMenu>
                 <button>
-                  <Link to={'/#skill'}>
+                  <Link to={'/#about'}>
                     <span>ABOUT</span>
                     </Link>
                 </button>
+                <Link to={'/#skill'}>
                 <button> 
-                    <span>EXPERIENCE</span>
+                    <span>SKILLS</span>
                 </button>
+                </Link>
+                <Link to={'/#projs'}>
                 <button> 
                     <span>PROJECTS</span>
                 </button>
+                </Link>
                 <button>  
-                    <span>EXTRACURRICULAR</span>
+                    <span>BLOGS</span>
                 </button>
             </NavMenu>         
             </Router>
@@ -90,7 +94,11 @@ align-items: center;
   }
   button:hover{
     background-color:rgba(0,0,0,0.8);
-    color:#f9f9f9;
+    color:#f9f9f9;  
+
+  }
+
+@media screen and (max-width: 700px){
+  transform:translateX(-26px);
 }
-  
 `
