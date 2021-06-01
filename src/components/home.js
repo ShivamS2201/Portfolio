@@ -16,7 +16,7 @@ function Home(){
             </p>
                 <p>With this know how I want to take plunge into hardcore technical field encompassing Ai based Mobile and Web applications.My research interests(but are not limited to) lies in computational social sciences with the intersection of machine learning, natural language processing and Artificial Intelligence.</p>
                 <br/>
-                <p>My resume(updated as of May, 2021) can be found at : <a href="https://drive.google.com/file/d/13npTL615PsfyOl6V8qUrmqEJ76Qf85tt/view?usp=sharing" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a><br /><br />
+                <p>My resume(updated as of May, 2021) can be found at : <a href="https://drive.google.com/file/d/1Kor9Q1fbaybr7vMnuRqV4g8eiq1VVaz7/view?usp=sharing" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a><br /><br />
                 For further details, Email <a href="mailto:shivamsharmau60@gmail.com" target="_blank"><i class="fa fa-envelope	"></i></a></p>
                 <div class="social-links" width="10px">
 		<a href="https://www.linkedin.com/in/shivam-s-183a16120/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
