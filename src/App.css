@@ -2,6 +2,8 @@
     scroll-behavior: smooth;
     text-decoration: none;
     color: inherit;
+    --transition-time:0.5s;
+    transition: all, var(--transition-time);
 
 }
 

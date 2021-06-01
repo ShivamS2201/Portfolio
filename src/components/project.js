@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 function Project(){
     return(
+    <Contain>
         <Container>
           
                   <div class="card one" id="#projs">
@@ -31,11 +32,59 @@ function Project(){
           <p><a href="https://github.com/ShivamS2201/Classification" target="_blank"><button>VIEW</button></a></p>
         </div>  
                 </Container>
+            <Extra id="#extra">
+            <h3 class="videos"> BLOGS</h3>
+              <div class="blogs">
+                
+                <a class="card" href="https://medium.com/caffeine2code/getting-started-with-computation-784a723914d3" target="_blank" >
+              <div>
+        <h1>Getting Started with Computation</h1>
+        <p>I see you are curious to learn a thing about computation.... </p>
+        <div class="date">Jun 5, 2020 · 2 min read</div>
+        <div class="tags">
+          <div class="tag">Python</div>
+           <div class="tag">Computation</div>
+           <div class="tag">Mathematics</div>
+        </div>
+      </div>
+    </a>
+                </div>
+
+                <h3 class="videos">VIDEOS</h3>
+                <div class="blogs">
+                
+                                <a class="card2" href="https://medium.com/caffeine2code/getting-started-with-computation-784a723914d3" target="_blank" >
+              <div>
+        <h1>Intro to Public Speaking</h1>
+        <p>The interactive session includes -
+• Discussion on Introvert Nature
+• Importance of Being Confident </p>
+        <div class="tags">
+          <div class="tag">Motivation</div>
+           <div class="tag">Orator</div>
+           <div class="tag">Public Speaking</div>
+        </div>
+      </div>
+    </a>
+    <a class="card3" href="https://www.youtube.com/watch?v=5fjSBJOH3jE&list=PLXeiBgja1M0wnMwwBaDu2iglMt9Gk3v2i&index=9" target="_blank" >
+              <div>
+        <h1>Open Mic</h1>
+        <p>An Open mic session on varoius National and International Topics. </p>
+        <div class="tags">
+          <div class="tag">Open Mic</div>
+           <div class="tag">Fun</div>
+           <div class="tag">Public Speaking</div>
+        </div>
+      </div>
+    </a></div>              
+            </Extra>
+            </Contain>
     )
 }
 
 const Container = styled.div`
-transition: all 250ms cubic-bezier(0, 1.26, 0.83, 0.67);
+transition: all 250ms;
+transition-timing-function: ease-in-out;
 margin-top:80px;
 margin-bottom:30px;
 min-height:50vh;
@@ -48,8 +97,9 @@ display: flex;
   font-size: 30px;
 }
 .card {
+  border-radius:30px;
   text-decoration:none;
-  img{
+  img{border-radius:23px;
     height:200px;
     width:100%;
   }
@@ -125,7 +175,248 @@ display: flex;
 
 }
 `
+const Extra = styled.div`
+margin-top:60px;
+.videos{
+  margin-left:30px;
+}
+.blogs{
+  padding:0 calc(3.5vw + 5px);
+display:flex;
+  margin-left:12px;
+  margin-top:30px;
+}
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.6;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height:200px;
+  width: 15em;
+  font-size: 20px;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+   display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  position: relative;
+  border: 10px solid #fff;
+  text-decoration: none;
+  --bg-img: url(https://miro.medium.com/max/669/1*OM4AIDMDcOYjXajYBzn2Cw.png);
+  margin-left: 18px;
+
+}
+.card:hover {
+  transform: scale(1.06);
+  --bg-filter-opacity: 0.58;
+
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card2 {
+  margin-left:19px;
+  font-family: 'Helvetica';
+  --bg-filter-opacity: 0.6;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-imgs);
+  height:200px;
+  width: 15em;
+  font-size: 20px;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+   display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  position: relative;
+  border: 10px solid #fff;
+  text-decoration: none;
+  --bg-imgs: url(http://i3.ytimg.com/vi/yxlxyOJEak4/maxresdefault.jpg);
+
+}
+.card2:hover {
+  transform: scale(1.06);
+  --bg-filter-opacity: 0.58;
+
+}
+
+.card2 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card2 p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card2 .tags {
+  display: flex;
+}
+
+.card2 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card2:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card2 .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+.card3 {
+  margin-left:19px;
+  font-family: 'Helvetica';
+  --bg-filter-opacity: 0.6;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-imgss);
+  height:200px;
+  width: 15em;
+  font-size: 20px;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+   display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  position: relative;
+  border: 10px solid #fff;
+  text-decoration: none;
+  --bg-imgss: url(http://i3.ytimg.com/vi/5fjSBJOH3jE/maxresdefault.jpg);
+
+}
+.card3:hover {
+  transform: scale(1.06);
+  --bg-filter-opacity: 0.58;
+
+}
+
+.card3 h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card3 p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card3 .tags {
+  display: flex;
+}
+
+.card3 .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card3:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+.card3 .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+@media screen and (max-width: 700px){
+  .blogs{
+    flex-direction:column;
+    margin-left:2px;
+
+  }
+  .card{
+    margin-left:12px;
+  }
+  .card2{
+    margin-left:12px;
+
+  }
+  .card3{
+    margin-top:20px;
+    margin-left:12px;
+  }
+}
+`;
+const Contain = styled.div`
+margin-bottom:30px`;
 
 
+//http://i3.ytimg.com/vi/5fjSBJOH3jE/maxresdefault.jpg
 export default Project
 //<!--<img src="https://github.com/ShivamS2201/Disney-Clone-_With-Firebase/raw/main/public/images/disney+3.JPG?raw=true" alt="Denim Jeans"  />               <img src="https://github.com/ShivamS2201/Disney-Clone-_With-Firebase/raw/main/public/images/disney+3.JPG?raw=true" alt="Denim Jeans"  />

@@ -30,8 +30,11 @@ function Navbar(){
                 </button>
                 </Link>
                 <button>  
-                    <span>BLOGS</span>
+                  <Link to={'/#extra'}>
+                    <span>EXTRAS</span>
+                    </Link>
                 </button>
+                
             </NavMenu>         
             </Router>
 </NavContainer>
@@ -47,7 +50,7 @@ top: 0;
 left: 0;
 right: 0;
 height: 70px;
-background-color: #f9f9f9;
+background-color: lavender;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -84,7 +87,7 @@ align-items: center;
  
   button {
     display: flex;
-    background-color: #f9f9f9;
+    background-color: lavender;
     align-items: center;
     padding: 6px 21px;
     border:0px;
