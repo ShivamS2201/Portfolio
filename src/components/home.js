@@ -5,7 +5,7 @@ function Home(){
 
   
     return(
-        <Conatiner>
+        <Conatiner >
         <div class="row">
             <div class="side">
             <h1>SHIVAM SHARMA</h1>
@@ -16,9 +16,9 @@ function Home(){
                 <p>With this know how I want to take plunge into hardcore technical field encompassing Ai based Mobile and Web applications.</p>
                 <br/>
                 <div class="social-links" width="10px">
-		<a href="https://www.linkedin.com/in/shivam-s-183a16120/" target="_blank"><i class="fa fa-linkedin"></i></a>
-		<a href="https://github.com/ShivamS2201" target="_blank"><i class="fa fa-github"></i></a>
-		<a href="https://twitter.com/xzjdshfuhW" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.linkedin.com/in/shivam-s-183a16120/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+		<a href="https://github.com/ShivamS2201" target="_blank"><i class="fab fa-github-square"></i></a>
+		<a href="https://twitter.com/xzjdshfuhW" target="_blank"><i class="fab fa-twitter	"></i></a>
 		
 	</div>
             </div>
@@ -28,49 +28,46 @@ function Home(){
          </div>
          </div>
          <hr />
-        <center> <h1>My Skills</h1></center>
+         <div class="gap"></div>
+        <center> <h1 id="#skill">SKILLS</h1></center>
 
-         <SkillMeter id="#skill" key="skill">
-         <div class="side2"  >    
-         <h3>LANGUAGES</h3>
-         <div class="skills lang">Python</div>     
-         <div class="skills lang">JavaScript</div>     
-         <div class="skills lang">C++</div>     
-         <div class="skills lang">Lua</div>
-         <div class="skills lang">HTML</div>     
-         <h3>FrameWorks</h3>
-        <div class="skills frameworks">Django</div>
-        <div class="skills frameworks">React</div>
-        <div class="skills frameworks">Flask</div>        
-        <div class="skills frameworks">Flutter</div>
-        <h3>Technologies</h3>
-            <div class="skills Tech">Machine Learning</div>
-            <div class="skills Tech">Computer Vision</div>
-            <div class="skills Tech" id="1css">Deep Learning</div>
-          <h3>Libraries</h3>   
-           <div class="skills libs">Pandas</div>
-           <div class="skills libs">Numpy</div>
-           <div class="skills libs">Matplotlib</div>
-           <div class="skills libs">Tensorflow</div>
-           <div class="skills libs">Keras</div>
-           <div class="skills libs CV">OpenCv</div>
+         <SkillMeter>
+            <div class="side2"  >    
+              <h3>LANGUAGES</h3>
+                <div class="skills lang">Python</div>     
+                <div class="skills lang">JavaScript</div>     
+                <div class="skills lang">C++</div>     
+                <div class="skills lang">Lua</div>
+                <div class="skills lang">HTML</div>     
+              <h3>FrameWorks</h3>
+                <div class="skills frameworks">Django</div>
+                <div class="skills frameworks">React</div>
+                <div class="skills frameworks">Flask</div>        
+                <div class="skills frameworks">Flutter</div>
+              <h3>Technologies</h3>
+                <div class="skills Tech">Machine Learning</div>
+                <div class="skills Tech">Computer Vision</div>
+                <div class="skills Tech" id="1css">Deep Learning</div>
+                <h3>Libraries</h3>   
+                <div class="skills libs">Pandas</div>
+                <div class="skills libs">Numpy</div>
+                <div class="skills libs">Matplotlib</div>
+                <div class="skills libs">Tensorflow</div>
+                <div class="skills libs">Keras</div>
+                <div class="skills libs CV">OpenCv</div>
            </div>
            
         <div class="main2">
-            <h2 class="item1"><center>TOOLS</center></h2>
-            <div class="item2"><i class='fab fa-github-square'></i></div>
-            <div class="item3"> <i class="fab fa-git-alt"></i></div>
-            <div class="item4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" alt="vscode-icon"/></div>
-            <div class="item5"> <img src="https://pbs.twimg.com/profile_images/1201816065266929664/evgRr8NV_400x400.jpg" alt="vscode-icon"/></div>
-            <div class="item6"><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/c7a9e3c69a2af799d9ba8693819794718e194956/icons/file_type_vscode.svg" alt="vscode-icon"/></div>
-
-
+                <h2 class="item1"><center>TOOLS</center></h2>
+                <div class="item2"><i class='fab fa-github-square'></i></div>
+                <div class="item3"> <i class="fab fa-git-alt"></i></div>
+                <div class="item4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" alt="vscode-icon"/></div>
+                <div class="item5"> <img src="https://pbs.twimg.com/profile_images/1201816065266929664/evgRr8NV_400x400.jpg" alt="vscode-icon"/></div>
+                <div class="item6"><img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/c7a9e3c69a2af799d9ba8693819794718e194956/icons/file_type_vscode.svg" alt="vscode-icon"/></div>
          </div>
-
-
-          
          </SkillMeter>
-
+         <hr />
+         <center><h1 class="proj" >PROJECTS</h1></center>
          
         </Conatiner>
     )
@@ -99,13 +96,13 @@ padding:0 calc(3.5vw + 5px);
      }
     .social-links{
      display:flex;
-     justify-content: space-between
+     justify-content: space-between;
 
     }
     .social-links > a{
         margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 44px;
     }
   }
   .side > p{
@@ -125,6 +122,15 @@ padding:0 calc(3.5vw + 5px);
         
     }
   }
+  .gap{
+    margin-top:90px;
+    background-color:red;
+  }
+  .proj{
+    margin-top:40px;
+    transform: translateY(54px);
+
+  }
   @media screen and (max-width: 700px) {
     .row {  margin-top:90px; 
       flex-direction: column;
@@ -138,6 +144,9 @@ padding:0 calc(3.5vw + 5px);
       box-shadow: rgb(0 0 0 /69%) 0 26px 30px -10px,
     rgba(0 0 0 /73%) 0 16px 10px -10px;
          }
+    .social-links > a{
+        font-size: 30px;
+      }
     
     }  
 
@@ -145,7 +154,6 @@ padding:0 calc(3.5vw + 5px);
 
 const SkillMeter = styled.div`
 display:flex;
-
 margin-bottom:30px;
 margin-top: 12px; 
 min-height:30vh;
